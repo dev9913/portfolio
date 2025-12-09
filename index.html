@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f55bbd67a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ 
+<!-- ================= NAVBAR ================= -->
+    
+<header id="header">
+    <nav class="navbar">
+        <div class="logo">DevOps<span>Engineer</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section id="hero">
+    <div class="hero-content">
+        <h1>Dev Jangir</h1>
+        <h2>DevOps Engineer | Cloud | Automation | CI/CD</h2>
+        <p class="tagline">“I build automated, scalable, and secure systems.”</p>
+
+        <div class="hero-buttons">
+            <a href="Dev_Resume.pdf" class="btn neon">Download Resume</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="devimg.jpeg" alt="DevOps Illustration">
+    </div>
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-wrapper">
+        <div class="about-image">
+            <img src="devops.avif" alt="Dev Jangir">
+        </div>
+        <div class="about-text">
+            <p>Hello! I’m <strong>Dev Jangir</strong>, a DevOps Engineer passionate about building automated, scalable, and secure systems.</p>
+            <div class="about-skills">
+                <h4>Key Skills:</h4>
+                <ul>
+                    <li>DevOps & Automation</li>
+                    <li>AWS / Azure Cloud</li>
+                    <li>Docker & Kubernetes</li>
+                    <li>Terraform & Ansible</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>Monitoring (Prometheus / Grafana)</li>
+                    <li>Bash & Python Scripting</li>
+                </ul>
+            </div>
+            <a href="Dev_Resume.pdf" class="btn-download" target="_blank">Download Resume</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>CI/CD Pipeline using GitHub Actions</h3>
+            <p>Automated deployment pipeline with build, test, security checks, and rollout steps.</p>
+            <span class="tools">GitHub Actions • Docker • Linux</span>
+            <a href="https://github.com/dev9913/GithubAction-project" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Kubernetes Deployment for Microservices</h3>
+            <p>Deployed containerized services with autoscaling, monitoring, and service mesh.</p>
+            <span class="tools">K8s • Helm • Prometheus</span>
+            <a href="https://github.com/dev9913/Proshop" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Infrastructure-as-Code with Terraform</h3>
+            <p>Provisioned cloud infrastructure with reusable modules & automated pipelines.</p>
+            <span class="tools">Terraform • AWS • Git</span>
+            <a href="https://github.com/dev9913/Terraform-aws" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Dockerized Web App</h3>
+            <p>Containerized and optimized application for smooth deployment across environments.</p>
+            <span class="tools">Docker • Nginx • GitHub Actions</span>
+            <a href="https://github.com/dev9913/Mood-App-React" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Monitoring Stack with Prometheus + Grafana</h3>
+            <p>End-to-end monitoring platform with custom dashboards and alerting.</p>
+            <span class="tools">Prometheus • Grafana • Alertmanager</span>
+            <a href="https://github.com/dev9913/Proshop" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+    </div>
+</section>
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">☁️</div>
+      <h3>Cloud</h3>
+      <div class="skill-circle" data-percent="90"><span>70%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🐳</div>
+      <h3>Containers</h3>
+      <div class="skill-circle" data-percent="85"><span>80%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📜</div>
+      <h3>IaC</h3>
+      <div class="skill-circle" data-percent="80"><span>80%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚙️</div>
+      <h3>CI/CD</h3>
+      <div class="skill-circle" data-percent="85"><span>70%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🐚</div>
+      <h3>Scripting</h3>
+      <div class="skill-circle" data-percent="80"><span>60%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🗂️</div>
+      <h3>Version Control</h3>
+      <div class="skill-circle" data-percent="90"><span>70%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔒</div>
+      <h3>Security</h3>
+      <div class="skill-circle" data-percent="70"><span>60%</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📈</div>
+      <h3>Monitoring</h3>
+      <div class="skill-circle" data-percent="75"><span>80%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+    <h2 class="section-title">Experience & Education</h2>
+    <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="education-tab">Education</button>
+        <button class="tab-btn" data-tab="experience-tab">Experience</button>
+    </div>
+    <div class="tab-content active" id="education-tab">
+        <div class="card-grid">
+            <div class="exp-card">
+                <div class="card-icon">🎓</div>
+                <h3>Bachelor of Computer Application</h3>
+                <span class="card-subtitle">S.S.G PAREEK PG COLLEGE | 2023 - 2026</span>
+                <p>Focus on cloud computing, scripting, and software deployment best practices.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="experience-tab">
+        <div class="exp-card">
+            <h3>Still Finding Internship</h3>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <form id="contact-form" method="POST" action="contact.php">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:devjangig@gmail.com">devjangig@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+911234567890">+91 1234567890</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/dev9913" target="_blank">github.com/dev9913</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dev-jangir-a7a8692b9" target="_blank">linkedin.com/in/dev-jangir</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
