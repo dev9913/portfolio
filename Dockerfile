@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY ./ /app
 
-RUN npm insatll -g http-server
+RUN npm install -g http-server
 
 EXPOSE 8080
 
-CMD ["http-servcer", "-p", "8080"]
+CMD ["http-server", "-p", "8080"]
 
