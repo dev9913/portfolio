@@ -20,7 +20,7 @@ pipeline {
        stage('Run') {
            steps{
                echo 'Runnig the docker image ... '
-               sh "docker run -d -p 80:8080 dev9913/portfolio:latest "
+               sh "docker run -d -p 80:8080 dev7878/portfolio:latest "
                echo " Success !!!~~~~"
            }
        }
