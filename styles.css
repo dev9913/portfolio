@@ -600,18 +600,18 @@ h1, h2, h3 {
     .nav-links {
         position: fixed;
         top: 60px;
-        right: -100%;
+        left: -100%; /* Changed from right: -100% to left: -100% to slide from left */
         width: 250px;
         height: calc(100vh - 60px);
         background: #1b1a17;
         flex-direction: column;
         padding: 20px;
-        transition: right 0.3s ease;
-        border-left: 1px solid rgba(212, 163, 115, 0.2);
+        transition: left 0.3s ease; /* Changed from right to left */
+        border-right: 1px solid rgba(212, 163, 115, 0.2); /* Changed from border-left to border-right */
         overflow-y: auto;
     }
     .nav-links.open {
-        right: 0;
+        left: 0; /* Changed from right: 0 to left: 0 */
     }
     .menu-toggle {
         display: block;
