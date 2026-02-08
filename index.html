@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/7f55bbd67a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,20 +14,19 @@
 <!-- ================= NAVBAR ================= -->
     
 <header id="header">
-    <nav class="navbar">
-        <div class="logo">DevOps<span>Engineer</span></div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
-    </nav>
-</header>
-
+        <nav class="navbar">
+            <div class="logo">DevOps<span>Engineer</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
 <!-- ================= HERO SECTION ================= -->
 
 <section id="hero">
@@ -51,7 +50,7 @@
 <!-- ================= ABOUT SECTION ================= -->
 
 <section id="about">
-    <h2 class="section-title">About Me</h2>
+    <h2 id="ab" class="section-title">About Me</h2>
     <div class="about-wrapper">
         <div class="about-image">
             <img src="devops.avif" alt="Dev Jangir">
@@ -77,98 +76,170 @@
 
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
+<section id="projects" class="project-stories">
+  <h2 class="project-title">Projects</h2>
 
-    <div class="project-grid">
+  <div class="project-list">
 
-        <div class="project-card">
-            <h3>CI/CD Pipeline using GitHub Actions</h3>
-            <p>Automated deployment pipeline with build, test, security checks, and rollout steps.</p>
-            <span class="tools">GitHub Actions • Docker • Linux</span>
-            <a href="https://github.com/dev9913/GithubAction-project" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a
+      href="https://github.com/dev9913/GithubAction-project"
+      target="_blank"
+      rel="noreferrer"
+      class="project-row"
+    >
+      <span class="arrow">→</span>
+
+      <div class="project-content">
+        <h3>CI/CD Pipeline</h3>
+        <p>Automated build, test, security scan, and deployment using GitHub Actions.</p>
+
+        <div class="tech-row">
+          <span>GitHub Actions</span>
+          <span>Docker</span>
+          <span>Linux</span>
         </div>
+      </div>
+    </a>
 
-        <div class="project-card">
-            <h3>Kubernetes Deployment for Microservices</h3>
-            <p>Deployed containerized services with autoscaling, monitoring, and service mesh.</p>
-            <span class="tools">K8s • Helm • Prometheus</span>
-            <a href="https://github.com/dev9913/Proshop" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a
+      href="https://github.com/dev9913/Proshop"
+      target="_blank"
+      rel="noreferrer"
+      class="project-row"
+    >
+      <span class="arrow">→</span>
+
+      <div class="project-content">
+        <h3>Kubernetes Microservices</h3>
+        <p>Scalable microservices with autoscaling and observability.</p>
+
+        <div class="tech-row">
+          <span>Kubernetes</span>
+          <span>Helm</span>
+          <span>Prometheus</span>
         </div>
+      </div>
+    </a>
 
-        <div class="project-card">
-            <h3>Infrastructure-as-Code with Terraform</h3>
-            <p>Provisioned cloud infrastructure with reusable modules & automated pipelines.</p>
-            <span class="tools">Terraform • AWS • Git</span>
-            <a href="https://github.com/dev9913/Terraform-aws" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a
+      href="https://github.com/dev9913/Terraform-aws"
+      target="_blank"
+      rel="noreferrer"
+      class="project-row"
+    >
+      <span class="arrow">→</span>
+
+      <div class="project-content">
+        <h3>Terraform on AWS</h3>
+        <p>Reusable Terraform modules for multi-env cloud infrastructure.</p>
+
+        <div class="tech-row">
+          <span>Terraform</span>
+          <span>AWS</span>
+          <span>Git</span>
         </div>
+      </div>
+    </a>
 
-        <div class="project-card">
-            <h3>Dockerized Web App</h3>
-            <p>Containerized and optimized application for smooth deployment across environments.</p>
-            <span class="tools">Docker • Nginx • GitHub Actions</span>
-            <a href="https://github.com/dev9913/Mood-App-React" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a
+      href="https://github.com/dev9913/Mood-App-React"
+      target="_blank"
+      rel="noreferrer"
+      class="project-row"
+    >
+      <span class="arrow">→</span>
+
+      <div class="project-content">
+        <h3>Dockerized Web App</h3>
+        <p>Production-ready containerized application.</p>
+
+        <div class="tech-row">
+          <span>Docker</span>
+          <span>Nginx</span>
+          <span>CI/CD</span>
         </div>
+      </div>
+    </a>
 
-        <div class="project-card">
-            <h3>Monitoring Stack with Prometheus + Grafana</h3>
-            <p>End-to-end monitoring platform with custom dashboards and alerting.</p>
-            <span class="tools">Prometheus • Grafana • Alertmanager</span>
-            <a href="https://github.com/dev9913/Proshop" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-
-    </div>
-</section>
-<!-- ================= SKILLS ================= -->
-<section id="skills">
-  <h2 class="section-title">My Skills</h2>
-  <div class="skills-wheel">
-    <div class="skill-item">
-      <div class="skill-icon">☁️</div>
-      <h3>Cloud</h3>
-      <div class="skill-level">70%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">🐳</div>
-      <h3>Containers</h3>
-      <div class="skill-level">80%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">📜</div>
-      <h3>IaC</h3>
-      <div class="skill-level">80%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">⚙️</div>
-      <h3>CI/CD</h3>
-      <div class="skill-level">70%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">🐚</div>
-      <h3>Scripting</h3>
-      <div class="skill-level">60%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">🗂️</div>
-      <h3>Version Control</h3>
-      <div class="skill-level">70%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">🔒</div>
-      <h3>Security</h3>
-      <div class="skill-level">60%</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-icon">📈</div>
-      <h3>Monitoring</h3>
-      <div class="skill-level">80%</div>
-    </div>
   </div>
 </section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="terminal-section">
+        <h2 class="terminal-title">Skills</h2>
+
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+
+            <div class="terminal-body">
+                <div class="terminal-line" style="animation-delay: 0s;">
+                    <span class="prompt">$</span> Cloud --version
+                    <div class="terminal-output">
+                        <span class="terminal-icon">☁️</span>
+                        AWS CLI
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 0.4s;">
+                    <span class="prompt">$</span> Container info
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🐳</span>
+                        Docker, Kubernetes
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 0.8s;">
+                    <span class="prompt">$</span> Pipeline --status
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🔧</span>
+                        Jenkins, GitHub Actions, ArgoCD
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 1.2s;">
+                    <span class="prompt">$</span> Iac plan
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🏗️</span>
+                        Terraform, Ansible
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 1.6s;">
+                    <span class="prompt">$</span> Monitoring stack
+                    <div class="terminal-output">
+                        <span class="terminal-icon">📊</span>
+                        Prometheus, Grafana
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 2.0s;">
+                    <span class="prompt">$</span> Vault status
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🔐</span>
+                        Vault
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 2.4s;">
+                    <span class="prompt">$</span> Git status
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🐙</span>
+                        GitHub
+                    </div>
+                </div>
+                <div class="terminal-line" style="animation-delay: 2.8s;">
+                    <span class="prompt">$</span> Uname -a
+                    <div class="terminal-output">
+                        <span class="terminal-icon">🐧</span>
+                        Linux
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- ================= EXPERIENCE ================= -->
 
 <section id="experience">
-    <h2 class="section-title">Experience & Education</h2>
+    <h2 id="exp" class="section-title">Experience & Education</h2>
     <div class="tab-buttons">
         <button class="tab-btn active" data-tab="education-tab">Education</button>
         <button class="tab-btn" data-tab="experience-tab">Experience</button>
@@ -192,29 +263,31 @@
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-wrapper">
-        <div class="contact-form">
-            <form id="contact-form" method="POST" action="contact.php">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <h3>Get in Touch</h3>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:devjangig@gmail.com">devjangig@gmail.com</a></li>
-                <li><strong>Phone:</strong> <a href="tel:+911234567890">+91 1234567890</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/dev9913" target="_blank">github.com/dev9913</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dev-jangir-a7a8692b9" target="_blank">linkedin.com/in/dev-jangir</a></li>
-            </ul>
-        </div>
+<section id="contact" class="contact-earthy">
+  <h2 id="con" class="section-title">Contact</h2>
+
+  <p class="contact-intro">
+    If you’d like to collaborate, discuss DevOps work, or just have a conversation,
+    feel free to reach out through any of the channels below.
+  </p>
+
+  <div class="contact-actions">
+    <a href="mailto:devjangig@gmail.com" class="contact-main">
+      devjangig@gmail.com
+    </a>
+
+    <div class="contact-secondary">
+      <a href="https://github.com/dev9913" target="_blank">GitHub</a>
+      <span>/</span>
+      <a href="https://www.linkedin.com/in/dev-jangir-a7a8692b9" target="_blank">LinkedIn</a>
+      <span>/</span>
+      <a href="tel:+91">Phone</a>
     </div>
+  </div>
 </section>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
